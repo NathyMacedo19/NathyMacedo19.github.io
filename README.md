@@ -1,4 +1,4 @@
-# Nathymacedo19.github.io1
+# Nathymacedo19.github.io
 
 👋 Hi, I’m Nathalia Macedo
 
