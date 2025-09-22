@@ -14,11 +14,4 @@ Currently transitioning into Computing Science, gaining expertise in software de
 <h3>Front-End Class</h3>
 
    
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
-
-    <p><a href="C:\Users\nathy\OneDrive\OneDrive\Área de Trabalho\Courses\Dorset College\Year 2\Sem 1\Front-end\A Tale of Two Citiesh1.html">A Tale of Two Cities</a></p>
-  </body>
-</html>
-
+ 
