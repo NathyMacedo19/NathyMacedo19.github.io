@@ -1,5 +1,5 @@
 /*  ============= WEB BROWSER RESETS ============ */
-* { margin: 0; padding: 0; border: none }
+* { margin: 10; padding: 10; border: none }
 *, *::before, *::after { box-sizing: border-box }
 html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
 scroll-behavior: smooth; scroll-padding-top: 20px }
@@ -41,6 +41,83 @@ header, section, footer { margin-left: auto; margin-right: auto; overflow: hidde
 section > *:last-child { margin-bottom: 0 !important }
 
 /*  ====================== HEADER ======================== */
+header {
+    /* Flexbox to centre child div vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Spacing around child div inside hero block */
+    padding: 0 20% 4% 20%;
+    /* Optionally, centre child div horizontally */
+    text-align: center;
+    /* Dark blue */ 
+background-color: transparent;
+}
+
+/* Set minimum height of hero block */
+@media (min-width: 768px) { 
+    header { min-height: 80vh } 
+}
+@media (max-width: 767px) { 
+    header { min-height: 500px } 
+}
+
+.hero-text-container h1, 
+.hero-text-container h2 {
+    line-height: 1.2;
+    color:rgb(244, 79, 194);
+}
+
+.hero-text-container h1 {
+    /* Space under h1 and above h2 */
+    margin-bottom: 24px;
+    /* Set main heading to extra large size */
+    font-size: calc(var(--fs-xxxl) * 1.5);
+    /* When text extra large, decrease spacing between characters  */
+    letter-spacing: -4px;
+}
+
+.hero-text-container h2 {
+    /* Optionally, remove default weight of 'bold' from h2 */
+    font-weight: normal;
+    font-size: var(--fs-xl);
+    /* Optionally, change text in h2 to all capital letters */
+    text-transform: uppercase;
+}
+
+
+/* ======== END CSS FOR HERO BLOCK ======== */
+
+.slide-in-top {
+	animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+      animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;  
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 
 /* Padding around content: laptops / desktops  */
 @media (min-width: 768px) {
@@ -92,39 +169,31 @@ section > * { max-width: 1600px }
 section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
 
 /* ============= TYPOGRAPHY ============ */
-body { font-family: var(--font-sans); text-align: center;}
-body { background-color: #d2b4de; }
-
+body{ background-color: antiquewhite;}
 h1 {
     font-size: var(--fs-xxxl);
-    line-height: 1.45;
-    text-align: center;
-    font-weight: normal;
-    letter-spacing: -3px;
+    line-height: 1.2;
 }
 
 h2 {
     font-size: var(--fs-xl);
-    line-height: 1.45;
-    margin-top: 32px;
+    line-height: 1.2;
+    margin-top: 42px;
     margin-bottom: 16px;
-    font-weight: normal;
-    letter-spacing: 2px;
 }
 
 h3 {
     font-size: var(--fs-lg);
     margin-top: 48px; 
-    margin-bottom: 24px;
+    margin-bottom: 4px;
     line-height: 1.2;
-    text-transform: uppercase;
-
 }
 
 p {
 	font-size: var(--fs-md);
-    line-height: 1.7;
+    line-height: 1.5;
 	margin-bottom: 12px;
+    color: black;
 }
 /* General Reset */
 body, html {
@@ -135,7 +204,7 @@ body, html {
   
   /* Background Image with Reduced Visibility */
   .bg {
-    background-image: url('bleach.gif');
+    background-image: url('assets\img\gameandlove.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -147,26 +216,28 @@ body, html {
     height: 100%;
   
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.8;
   }
   
   /* Main Content Styling */
   .content {
     position: relative;
-    z-index: 100;
+    z-index: 2;
     padding: 40px;
-    color: black;
+    color: red;
+    text-shadow: 2px 2px #ff0;
   }
   
   /* Profile Photo Styling */
   .perfil {
     width: 200px;
     height: 200px;
-    border-radius: 50%;   /* If you want a perfect circle, use 50% */
+    border-radius: 20%;   /* If you want a perfect circle, use 50% */
     position: absolute;
-    top: 100px;
-    right: 100px;
+    top: 50px;
+    right: 50px;
     
   }
-  a { color: darkgreen; }
-
+  a {color: purple;
+text-decoration: none;
+  }
