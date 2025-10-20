@@ -276,7 +276,6 @@ h1, h2, h2 { color: var(--green-700) }
 
 section *:last-child { margin-bottom: 0 !important }
 
-body { font-family: var(--font-sans) }
 
 
 /* Main heading */
@@ -286,14 +285,17 @@ h1 {
     line-height: 1.1;    
     margin-bottom: 30px;
     text-align: center;
-    letter-spacing: -2px
+    letter-spacing: -1px;
+    font-family: "Oswald", sans-serif;
 }
 
 header p { 
     font-size: var(--fs-md);
     color: var(--green-900) ;
     text-align: center;
-    font-weight:bold
+    font-weight:bold;
+    font-family: "Lato", sans-serif;
+    
 }
 header p1 { 
     font-size: var(--fs-sm);
@@ -309,6 +311,7 @@ h2 {
     line-height: 1.2;    
     margin-top: 42px;
     margin-bottom: 14px;
+    font-family: "Oswald", sans-serif;
 }
 
 section h2:nth-child(1) { margin-top: 0 }
@@ -319,6 +322,7 @@ p {
     color: #000;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-family: "Lato", sans-serif;
 }
 img {margin-bottom: 24px;
 border-radius: 25px;}
