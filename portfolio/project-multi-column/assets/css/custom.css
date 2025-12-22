@@ -1,4 +1,4 @@
-/* Add your custom CSS here */
+/* Nathalia Macedo 77742 */
 
 .section-selector-1 { background-color: var(--lime-500) }
 
@@ -68,4 +68,5 @@
 
 .section-selector-6.theme-light .cols-background .col-3:nth-child(3) {
    background-color: var(--red-300);
+
 }
