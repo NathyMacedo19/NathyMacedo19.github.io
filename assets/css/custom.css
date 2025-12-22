@@ -1,5 +1,4 @@
 /* Nathalia Macedo 77742 */
-
 nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #060606 }
 
 header.theme-dark   { background-color: #060606 }
@@ -13,5 +12,6 @@ footer.theme-dark   { background-color: #060606 }
 
 
 header .col-text h2, .col-1 > h3 { line-height: 1.8 }
+
 
 
