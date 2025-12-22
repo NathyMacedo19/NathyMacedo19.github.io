@@ -1,14 +1,15 @@
 
-nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #1d0c1e }
+nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #060606 }
 
-header.theme-dark   { background-color: #1d0c1e }
+header.theme-dark   { background-color: #060606 }
 
 header.theme-dark  h1 { color: var(--purple-500); }
 
-section.theme-dark   { background-color: #1d0c1e }
+section.theme-dark   { background-color: #060606 }
 
-footer.theme-dark   { background-color: #1d0c1e }
+footer.theme-dark   { background-color: #060606 }
 
 
 
 header .col-text h2, .col-1 > h3 { line-height: 1.8 }
+
