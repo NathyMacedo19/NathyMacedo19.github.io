@@ -1,3 +1,5 @@
+/* Nathalia Macedo 77742 */
+
 /*  ============= WEB BROWSER RESETS ============ */
 * { margin: 0; padding: 0; border: none }
 *, *::before, *::after { box-sizing: border-box }
@@ -355,3 +357,4 @@ p {
 .section-5 h2, .section-5 p { color: var(--white-000); }
 .section-6 h2, .section-6 p { color: var(--white-000); }
 .section-7 h2, .section-7 p { color: var(--white-000); }
+
