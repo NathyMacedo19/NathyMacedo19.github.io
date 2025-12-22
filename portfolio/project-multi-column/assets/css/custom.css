@@ -1,0 +1,71 @@
+/* Add your custom CSS here */
+
+.section-selector-1 { background-color: var(--lime-500) }
+
+
+.section-selector-1 .col-2 h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: calc(var(--font-size-xl) * 1.2);
+}
+
+.section-selector-2 .cols-shadows .col-3 { box-shadow: rgba(207,216,220,0.9) 14px 14px 14px 0 }
+@media (min-width: 768px) { .section-selector-2 .col-3 figure.fig-shadows-box { filter: drop-shadow(8px 8px 8px rgba(160, 174, 192, 0.9)); } }
+@media (max-width: 767px) { .section-selector-2 .col-3 figure.fig-shadows-box { filter: drop-shadow(6px 6px 6px rgba(160, 174, 192, 0.9)); } }
+.section-selector-2 { font-family: 'Playfair Display', serif }
+
+.section-selector-3.theme-dark { background-color: var(--trend-800) }
+.section-selector-3 .col-1 h2 { color: var(--sky-300) }
+.section-selector-3 .col-1 h3 { color: var(--slate-200) }
+.section-selector-3 .col-3 h3 { color: var(--sky-300) }
+.section-selector-3 .col-3 p { color: var(--slate-200) }
+.section-selector-3 .col-3 li { color: var(--slate-200) }
+.section-selector-3.theme-dark .cols-background .col-3 { background-color: var(--trend-700) }
+.section-selector-3 div[class^='flex-cols-'] div[class^='col-'] figure.icon { color: var(--sky-300) }
+
+.section-selector-3 .col-1 h2 { font-size: var(--font-size-xxl) }
+.section-selector-3 .col-3 h3 { font-weight: 400 }
+
+.gradient-text {
+    background: linear-gradient(to right,
+        var(--rose-400), /* Start color */
+        var(--purple-600) /* End color */
+    );
+
+    /* Clip the background to the text's shape */
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Make the text transparent so the background shows */
+    color: transparent;
+}
+
+.section-selector-4 { background-color: var(--yellow-300) }
+
+.section-selector-4 { font-family: 'Inter', sans-serif; }
+
+.section-selector-4 h2 { font-size: var(--font-size-xxl) }
+.section-selector-4 h2 span { font-weight: 200 }
+
+.section-selector-5.theme-light { background-color: var(--slate-050) }
+.section-selector-5 .col-1 h2 { color: var(--rose-600) }
+
+.section-selector-5.theme-light { font-family: 'Inter', sans-serif }
+
+.section-selector-5 .col-1 h2 { font-size: var(--font-size-xxl); }
+    
+.section-selector-5 .flex-cols-4 > .col-4 > h3 { font-size: var(--font-size-xl); }
+
+.section-selector-6.theme-light .cols-background .col-3 { background-color: var(--green-200) }
+
+.section-selector-6.theme-light .cols-background .col-3:nth-child(1) {
+    background-color: var(--green-200);
+}
+
+.section-selector-6.theme-light .cols-background .col-3:nth-child(2) {
+   background-color: var(--blue-200);
+}
+
+.section-selector-6.theme-light .cols-background .col-3:nth-child(3) {
+   background-color: var(--red-300);
+}

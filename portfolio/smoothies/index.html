@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Smoothies</title>
+    <meta name="description" content="Dublin's finest smoothie store. Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.">
+
+    <!-- Preload large image -->
+    <link rel="preload" href="assets/img/smoothies-hero-image.jpg" as="image">  
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="..\assets\img\favicons\apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="..\assets\img\favicons\favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="..\assets\img\favicons\favicon-16x16.png">
+	<link rel="manifest" href="..\assets\img\favicons\site.webmanifest">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom styles to preserve original design */
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('assets/img/smoothies-hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-bg-footer {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('assets/img/smoothies-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+        
+        /* Animation for header text */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .reveal-slide-up-header {
+            animation: slideUp 1s ease-out;
+        }
+        
+        /* Custom colors for sections */
+        .section-watermelon {
+            background-color: #ff6b6b;
+            color: white;
+        }
+        
+        .section-apple {
+            background-color: #c8e6c9;
+        }
+        
+        .section-blueberry {
+            background-color: #bbdefb;
+        }
+        
+        .section-lemon {
+            background-color: #fff9c4;
+        }
+
+        
+    </style>
+
+	<!-- Begin Inspectlet Asynchronous Code -->
+<script type="text/javascript">
+(function() {
+window.__insp = window.__insp || [];
+__insp.push(['wid', 666118281]);
+var ldinsp = function(){
+if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=666118281&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+setTimeout(ldinsp, 0);
+})();
+</script>
+<!-- End Inspectlet Asynchronous Code -->
+</head>
+
+<body class="font-sans">
+
+    <!-- Header with Hero Section -->
+    <header class="hero-bg h-[85vh] flex items-center justify-center relative text-white">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="container mx-auto px-6 text-center relative z-10 reveal-slide-up-header">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 text-shadow font-neucha">Smooth Smoothies</h1>
+            <h2 class="text-2xl md:text-3xl mb-8 text-shadow">Where flavour meets goodness.</h2>
+        </div>
+    </header>
+
+    <main>
+        <!-- Introduction Section -->
+        <section class="py-16 px-6 bg-white">
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-xl md:text-2xl text-gray-700">Our world-class smoothies are great at any time of the day and offer a tasty alternative to sugary and unhealthy snacks!</p>
+            </div>
+        </section>
+
+        <!-- Watermelon Smoothie Section -->
+        <section class="section-watermelon py-16 px-6">
+            <div class="container mx-auto max-w-6xl">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Watermelon Wonder</h2>
+                        <p class="text-lg md:text-xl">Watermelon is a delicious and refreshing fruit that's also good for you. It is high in vitamin C, vitamin A and many healthy plant compounds, but contains only 60 calories per smoothie. And because watermelon has a high water content, this smoothie is hydrating and helps you feel full.</p>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="assets/img/watermelon.png" alt="Watermelon Wonder" class="max-w-xs md:max-w-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apple Smoothie Section -->
+        <section class="section-apple py-16 px-6">
+            <div class="container mx-auto max-w-6xl">
+                <div class="flex flex-col md:flex-row-reverse items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0 md:pl-10">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Apple Delight</h2>
+                        <p class="text-lg md:text-xl">Apples are an awesome source of fibre and vitamin C. They also contain polyphenols, which can have numerous health benefits. Apples have been linked to a lower risk of heart disease because they contain soluble fibre that can help lower blood cholesterol. Studies have also shown that eating apples reduces the risk of type 2 diabetes.</p>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="assets/img/apple.png" alt="Apple Delight" class="max-w-xs md:max-w-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blueberry Smoothie Section -->
+        <section class="section-blueberry py-16 px-6">
+            <div class="container mx-auto max-w-6xl">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Blueberry Surprise</h2>
+                        <p class="text-lg md:text-xl">One of our top sellers. Blueberries are so tasty that many people consider them their favourite fruit. In fact, because they are low in calories and incredibly good for you. Blueberries are often labeled a superfood. Blueberries have the highest antioxidant capacity of all the popular fruits and vegetables.</p>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="assets/img/blueberry.png" alt="Blueberry Surprise" class="max-w-xs md:max-w-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lemon Smoothie Section -->
+        <section class="section-lemon py-16 px-6">
+            <div class="container mx-auto max-w-6xl">
+                <div class="flex flex-col md:flex-row-reverse items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0 md:pl-10">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Lemon Luxury</h2>
+                        <p class="text-lg md:text-xl">Add zest to your day with our delicious Lemon Luxury smoothie. As a citrus fruit, lemons are high in vitamin C, which is a primary antioxidant that helps reduce your risk of cardiovascular disease and lowers blood pressure. Refreshing and energising - that's our Lemony Luxury smoothie!</p>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="assets/img/lemon-removebg-preview.png" alt="Lemon Luxury" class="max-w-xs md:max-w-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 text-white hero-bg-footer">
+    <div class="container mx-auto px-6 text-center">
+        <h3 class="text-xl font-bold mb-3">Visit Us Today!</h3>
+        <p class="text-base mb-4">Find us at our Dublin store for the freshest smoothies in town.</p>
+        <div class="flex justify-center space-x-6">
+            <a href="#" class="text-gray-300 hover:text-green-400 transition">Facebook</a>
+            <a href="#" class="text-gray-300 hover:text-green-400 transition">Instagram</a>
+            <a href="#" class="text-gray-300 hover:text-green-400 transition">Twitter</a>
+        </div>
+        <p class="mt-6 text-gray-300 text-sm">&copy; 2023 Smooth Smoothies. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script>
+        // Add the Neucha font to Tailwind
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'neucha': ['Neucha', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
