@@ -1,0 +1,243 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 10; padding: 10; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body { line-height: 1.5; min-height: 100vh }
+img { width: 100%; height: auto }
+@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
+@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
+
+
+/* ============ CUSTOM PROPERTIES ============  */
+
+:root {
+
+    /* Alternatives to default sans-serif font */
+    --font-sans: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+
+     /* Alternatives to default serif font */
+    --font-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+
+     /* Alternatives to default monospace font */
+    --font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    /* Fluid font size scale */
+    --fs-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
+    --fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
+    --fs-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
+    --fs-lg: clamp(1.56rem, 1vi + 1.31rem, 2.11rem);
+    --fs-xl: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
+    --fs-xxl: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
+    --fs-xxxl: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
+
+}
+
+/*  ============== LAYOUT FOR CONTENT CONTAINERS ================= */
+
+nav, header, section, footer { position: relative; display: block }
+header, section, footer { margin-left: auto; margin-right: auto; overflow: hidden }
+/* Under last content item, zero the bottom margin */
+section > *:last-child { margin-bottom: 0 !important }
+
+/*  ====================== HEADER ======================== */
+header {
+    /* Flexbox to centre child div vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Spacing around child div inside hero block */
+    padding: 0 20% 4% 20%;
+    /* Optionally, centre child div horizontally */
+    text-align: center;
+    /* Dark blue */ 
+background-color: transparent;
+}
+
+/* Set minimum height of hero block */
+@media (min-width: 768px) { 
+    header { min-height: 80vh } 
+}
+@media (max-width: 767px) { 
+    header { min-height: 500px } 
+}
+
+.hero-text-container h1, 
+.hero-text-container h2 {
+    line-height: 1.2;
+    color:rgb(244, 79, 194);
+}
+
+.hero-text-container h1 {
+    /* Space under h1 and above h2 */
+    margin-bottom: 24px;
+    /* Set main heading to extra large size */
+    font-size: calc(var(--fs-xxxl) * 1.5);
+    /* When text extra large, decrease spacing between characters  */
+    letter-spacing: -4px;
+}
+
+.hero-text-container h2 {
+    /* Optionally, remove default weight of 'bold' from h2 */
+    font-weight: normal;
+    font-size: var(--fs-xl);
+    /* Optionally, change text in h2 to all capital letters */
+    text-transform: uppercase;
+}
+
+
+/* ======== END CSS FOR HERO BLOCK ======== */
+
+.slide-in-top {
+	animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+      animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;  
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* Padding around content: laptops / desktops  */
+@media (min-width: 768px) {
+    header { 
+        padding-top: 3%; 
+        padding-right: 20%;
+        padding-bottom: 0%;
+        padding-left: 20%
+    }
+}
+                        
+/* Padding around content: mobiles */
+@media (max-width: 767px) {
+    header { 
+        padding-top: 5%;
+        padding-right: 5%;
+        padding-bottom: 0%;
+        padding-left: 5%
+    }
+}
+
+/*  ====================== SECTIONS ======================== */
+
+/* Padding around content: laptops / desktops */
+@media (min-width: 768px) {
+    section { 
+        padding-top: 4%;
+        padding-right: 20%;
+        padding-bottom: 4%;
+        padding-left: 20%
+    }
+}
+                        
+/* Padding around content: mobiles */
+@media (max-width: 767px) {
+    section { 
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        padding-left: 5% }
+}
+
+/* Maximum width of any section */
+section { max-width: 1920px }
+/* Maximum width for contents of any section */
+section > * { max-width: 1600px }
+
+/* When content width < viewport width, equalise spacing at left and right */
+section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
+
+/* ============= TYPOGRAPHY ============ */
+body{ background-color: antiquewhite;}
+h1 {
+    font-size: var(--fs-xxxl);
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: var(--fs-xl);
+    line-height: 1.2;
+    margin-top: 42px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: var(--fs-lg);
+    margin-top: 48px; 
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+p {
+	font-size: var(--fs-md);
+    line-height: 1.5;
+	margin-bottom: 12px;
+    color: black;
+}
+/* General Reset */
+body, html {
+    margin: 10;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Background Image with Reduced Visibility */
+  .bg {
+    background-image: url('assets\img\gameandlove.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    z-index: -1;
+    opacity: 0.8;
+  }
+  
+  /* Main Content Styling */
+  .content {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    color: red;
+    text-shadow: 2px 2px #ff0;
+  }
+  
+  /* Profile Photo Styling */
+  .perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;   /* If you want a perfect circle, use 50% */
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    
+  }
+  a {color: purple;
+text-decoration: none;
+  }
